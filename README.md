@@ -33,6 +33,7 @@ npm run dev
 | 檔案 | 說明 |
 |------|------|
 | [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | GitHub Pages 部署 |
+| [docs/GITHUB_MCP_SETUP.md](docs/GITHUB_MCP_SETUP.md) | GitHub MCP 設定 |
 | [docs/DEVELOPMENT_LOG.md](docs/DEVELOPMENT_LOG.md) | 開發日誌 |
 | [docs/MULTI_TASK_RUNBOOK.md](docs/MULTI_TASK_RUNBOOK.md) | Multi Task 分工手冊 |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | 架構說明 |
