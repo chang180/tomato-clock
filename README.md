@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 番茄鐘 (Tomato Clock)
 
-## Getting Started
+瀏覽器番茄鐘 Web App：專注 / 短休 / 長休計時、設定與統計（localStorage）。
 
-First, run the development server:
+技術棧：Next.js (App Router) + React + TypeScript + Tailwind CSS。
+
+## 本機開發
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+開啟 [http://localhost:3000](http://localhost:3000)。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 部署至 GitHub Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+本專案已設定 GitHub Actions，推送 `main` 後會自動建置並發布靜態站。
 
-## Learn More
+### 第一次請在 GitHub 設定
 
-To learn more about Next.js, take a look at the following resources:
+1. 儲存庫 **Settings** → **Pages**
+2. **Source** 選 **GitHub Actions**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 上線網址
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**https://chang180.github.io/tomato-clock/**
 
-## Deploy on Vercel
+詳細說明見 [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 文件
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| 檔案 | 說明 |
+|------|------|
+| [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | GitHub Pages 部署 |
+| [docs/DEVELOPMENT_LOG.md](docs/DEVELOPMENT_LOG.md) | 開發日誌 |
+| [docs/MULTI_TASK_RUNBOOK.md](docs/MULTI_TASK_RUNBOOK.md) | Multi Task 分工手冊 |
+| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | 架構說明 |
+
+## 建置
+
+```bash
+npm run build    # 本機靜態匯出至 out/（無 basePath）
+npm run lint
+```
