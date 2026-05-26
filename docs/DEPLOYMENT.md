@@ -15,6 +15,14 @@
 3. **Build and deployment** → **Source** 選 **GitHub Actions**（不要選 Deploy from a branch）
 4. 儲存後即可
 
+或使用 GitHub CLI（與 MCP / `gh` 相同權限）：
+
+```bash
+gh api -X POST repos/chang180/tomato-clock/pages -f build_type=workflow
+```
+
+> 若未啟用 Pages，`deploy-pages` 會失敗並顯示 `HttpError: Not Found`。建置 job 可能已成功，僅 deploy job 失敗。
+
 ## 自動部署流程
 
 推送至 `main` 分支會觸發 [`.github/workflows/deploy-pages.yml`](../.github/workflows/deploy-pages.yml)：
